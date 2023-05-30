@@ -204,6 +204,7 @@ class MyBert(nn.Module):
     
     # Description
         1. 使用BertModel.from_pretrained 函数导入预训练模型，训练过程中模型的参数梯度为 False
+        2. 添加nn.Linear 实现特定下游任务
     """
     def __init__(self):
         super(MyBert, self).__init__()
