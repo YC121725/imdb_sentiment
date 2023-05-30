@@ -29,22 +29,6 @@ if __name__ == '__main__':
     # model2.fit(x_train,y_train)
     predictions_GB = model.predict(x_test)
     # predictions_GB2 = model2.predict(x_test)
-
-    # print(predictions_GB.shape)
-    # acc_num = 0
-    # acc_num2 = 0
-    # for i in range(len(predictions_GB)):
-    #     if predictions_GB[i] == y_test[i]:
-    #         acc_num +=1
-    # for i in range(len(predictions_GB2)):
-    #     if predictions_GB2[i] == y_test[i]:
-    #         acc_num2 +=1
-    
-    # print(acc_num/len(predictions_GB))
-    # # 0.86413
-    # print(recall_score(y_test,predictions_GB))
-    # print(acc_num2/len(predictions_GB2))
-    # print(recall_score(y_test,predictions_GB2))
     
     acc = evaluate.load('accuracy')
     # acc2 = evaluate.load('accuracy')
